@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+  "name": "Paper Analyzer",
+  "version": "1.0.0",
+  "author": "Mian Ali Ahmed",
+  "description": "Analyzes research papers across timelines and provides insights.",
+  "action": {
+    "default_popup": "index.html",
+    "default_icon": "icon.png"
+  },
+  "content_scripts": [
+    {
+      "world": "MAIN",
+      "matches": ["https://scholar.google.com/citations*"],
+      "run_at": "document_idle",
+      "js": ["Analyzer.js"]
+    }
+  ],
+  "permissions": ["storage"]
+}
