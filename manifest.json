@@ -10,11 +10,11 @@
   },
   "content_scripts": [
     {
-      "world": "MAIN",
       "matches": ["https://scholar.google.com/citations*"],
       "run_at": "document_idle",
-      "js": ["Analyzer.js"]
+      "js": ["chart.min.js", "Analyzer.js"]
     }
   ],
-  "permissions": ["storage"]
+  "permissions": ["nativeMessaging", "storage", "activeTab", "scripting"],
+  "host_permissions": ["https://scholar.google.com/*"]
 }
