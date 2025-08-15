@@ -1,8 +1,8 @@
 
 
-document.getElementById("clickMe").addEventListener("click", () => {
-  alert("Button clicked!");
-});
+// document.getElementById("clickMe").addEventListener("click", () => {
+//   alert("Button clicked!");
+// });
 
 document.getElementById('analyzeBtn').addEventListener('click', async () => {
 
