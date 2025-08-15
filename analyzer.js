@@ -432,11 +432,11 @@ function PlotGraphs(paper_graph_points) {
 
   // Combined chart
   let combineddiv = document.getElementById('combinedContainer');
-
   if (!combineddiv) {
     combineddiv = document.createElement('div');
-    chartsContainer.id = 'combinedContainer';
+    combineddiv.id = 'combinedContainer';
   }
+  combineddiv.innerHTML = ''
 
   let combinedCanvas = document.createElement('canvas');
   document.body.appendChild(combineddiv);
